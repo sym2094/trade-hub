@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 1. 你的项目坐标（根据你的实际包名修改） -->
+    <groupId>com.sym</groupId>
+    <artifactId>trade-hub</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 2. 关键点：打包方式必须是 pom，代表它是父工程 -->
+    <packaging>pom</packaging>
+
+    <name>trade-hub</name>
+    <description>父工程，用于管理所有子模块</description>
+
+    <!-- 3. 这里先空着，后续创建子模块时 IDEA 会自动帮我们填充 -->
+    <modules>
+        <module>trade-user</module>
+        <module>trade-product</module>
+        <module>trade-order</module>
+        <module>trade-instock</module>
+        <module>trade-payment</module>
+    </modules>
+
+</project>
